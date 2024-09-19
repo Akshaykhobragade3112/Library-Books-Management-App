@@ -1,0 +1,38 @@
+/* Main container for the Dashboard, including the title and button grid */
+.dashboard-container {
+  text-align: center; /* Center-align the content */
+  max-width: 600px; /* Maximum width of the container */
+  margin: 40px auto; /* Center the container on the page vertically and horizontally */
+  padding: 10px; /* Padding around the content */
+}
+
+/* Style for the title */
+.dashboard-title {
+  font-size: 24px; /* Font size for the dashboard title */
+  color: #333; /* Color of the text */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Grid container for buttons */
+.button-grid {
+  display: grid; /* Using grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  gap: 20px; /* Space between grid items */
+  justify-content: center; /* Center grid items horizontally */
+  align-items: center; /* Center grid items vertically */
+}
+
+/* Style for buttons within the grid */
+.dashboard-button {
+  padding: 12px 20px; /* Padding inside each button */
+  font-size: 16px; /* Font size inside buttons */
+  background-color: #007BFF; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer on hover */
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

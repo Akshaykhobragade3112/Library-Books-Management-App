@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;  /* Global font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;       /* Light background for the whole app */
+}
+
+h1, h2 {
+  color: #333;                     /* Dark text for headings */
+}
+
+a {
+  text-decoration: none;           /* Remove underline from links */
+  color: inherit;                  /* Inherit color */
+}
+
+button {
+  font-family: inherit;            /* Inherit the font from parent */
+}
+
+/* Container for the main app */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;               /* Ensure full height */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #007BFF;       /* Blue navbar background */
+  color: white;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;                    /* White navbar links */
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #0056b3;       /* Darker blue on hover */
+  border-radius: 5px;              /* Rounded corners on hover */
+}
+
+/* Page layout */
+.container {
+  max-width: 1200px;               /* Limit the width of the main content */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;              /* Center the content */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;              /* Padding inside buttons */
+  background-color: #007BFF;       /* Blue background for buttons */
+  color: white;                    /* White text */
+  border: none;
+  border-radius: 5px;              /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;  /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #0056b3;       /* Darker blue on hover */
+}
+
+/* Form input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form container */
+form {
+  max-width: 400px;                /* Form width */
+  margin: 20px auto;               /* Center the form */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for form */
+  border-radius: 8px;              /* Rounded corners */
+}
+
+/* Table for listing books */
+table {
+  width: 100%;
+  border-collapse: collapse;       /* Remove gaps between table cells */
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;   /* Light border between rows */
+}
+
+th {
+  background-color: #007BFF;       /* Blue background for headers */
+  color: white;                    /* White text for headers */
+}
+
+td {
+  background-color: white;
+}
+
+td.issued {
+  color: #dc3545;                  /* Red color for issued books */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;        /* Stack navbar items on smaller screens */
+  }
+
+  .container {
+    padding: 10px;                 /* Reduce padding on small screens */
+  }
+
+  button {
+    width: 100%;                   /* Full-width buttons on small screens */
+  }
+
+  form {
+    width: 100%;                   /* Full-width form on small screens */
+  }
+}

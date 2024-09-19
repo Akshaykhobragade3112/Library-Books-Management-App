@@ -1,0 +1,60 @@
+/* Container for the entire page */
+.issue-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px; /* Push the content down from the top */
+  text-align: center; /* Center-align text */
+}
+
+/* Styling for the title (centered at the top) */
+.issue-book-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px; /* Space between title and form */
+  color: #333;
+}
+
+/* Form styling */
+.issue-book-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px;
+  text-align: center; /* Center-align form elements */
+}
+
+.issue-book-form input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.issue-book-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.issue-book-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for success and error messages */
+.message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: green; /* Success message color */
+}
+
+.error {
+  color: red; /* Error message color */
+}

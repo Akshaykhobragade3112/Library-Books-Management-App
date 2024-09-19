@@ -1,0 +1,38 @@
+/* Container for the entire page */
+.view-books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px; /* Push the content down from the top */
+  text-align: center; /* Center-align text */
+}
+
+/* Styling for the title (centered at the top) */
+.view-books-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px; /* Space between title and book list */
+  color: #333;
+}
+
+/* Styling for the list of books */
+.books-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  width: 400px; /* Adjust to match the form width */
+  text-align: left; /* Align the book names to the left */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+}
+
+.books-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Last item without border */
+.books-list li:last-child {
+  border-bottom: none;
+}
