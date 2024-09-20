@@ -115,7 +115,7 @@ td.issued {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar {
     flex-direction: column;        /* Stack navbar items on smaller screens */
   }
@@ -125,10 +125,10 @@ td.issued {
   }
 
   button {
-    width: 100%;                   /* Full-width buttons on small screens */
+    width: 90%;                   /* Full-width buttons on small screens */
   }
 
   form {
-    width: 100%;                   /* Full-width form on small screens */
+    width: 90%;                   /* Full-width form on small screens */
   }
 }
