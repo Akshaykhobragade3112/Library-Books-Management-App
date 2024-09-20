@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://library-books-management-app.onrender.com/books';
+const API_URL = 'https://library-books-management-app-backend.onrender.com/books';
 
 export const addBook = async (bookData) => {
   return await axios.post(`${API_URL}`, bookData);
